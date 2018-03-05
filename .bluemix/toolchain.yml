@@ -13,9 +13,9 @@ template:
     - vehicle-repo
   info:
     git url: >-
-      [https://github.com/caroline-church/VehicleLifeCycleApp](https://github.com/caroline-church/VehicleLifeCycleApp)
+      [https://github.com/caroline-church/VehicleManufacture](https://github.com/caroline-church/VehicleManufacture)
     git branch: >-
-      [master](https://github.com/caroline-church/VehicleLifeCycleApp/tree/master)
+      [add-blue-button](https://github.com/caroline-church/VehicleManufacture/tree/add-blue-button)
 toolchain:
   name: 'vehiclemanufacture-tc-{{timestamp}}'
   template:
@@ -26,7 +26,7 @@ services:
     service_id: githubpublic
     parameters:
       repo_name: 'vehiclemanufacture-{{timestamp}}'
-      repo_url: 'https://github.com/caroline-church/VehicleLifeCycleApp'
+      repo_url: 'https://github.com/caroline-church/VehicleManufacture'
       type: clone
       has_issues: false
       enable_traceability: true
@@ -55,7 +55,7 @@ services:
       type: 'Vehicle'
       lifecyclePhase: 'RUN'
       imageUrl: 'https://github.com/caroline-church/VehicleManufacture/raw/add-blue-button/public/imgs/favicon-36.png'
-      documentationUrl: 'https://github.com/caroline-church/VehicleLifeCycleApp'
+      documentationUrl: 'https://github.com/caroline-church/VehicleManufacture'
       name: 'Node.js Application'
       dashboard_url: 'https://{{form.pipeline.parameters.prod-app-name}}.stage1.mybluemix.net/login'
       description: 'This is your Vehicle Manufacturing node.js application. You do not need to modify anything.'
